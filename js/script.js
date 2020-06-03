@@ -25,7 +25,8 @@ $(function($) {
             console.log(x, y, width, height);
             
             var width = canvas1.width;
-            var imageData = cntxt1.getImageData(0, 0, 1920, 1080);
+
+            var imageData = cntxt1.getImageData(0, 0, canvas1.width, canvas1.height);
             
             for(var x_cord = x; x_cord < x + width_img; x_cord++){
                 for(var y_cord = y; y_cord < y + height; y_cord++){
@@ -36,9 +37,9 @@ $(function($) {
                 }
             }
             cntxt1.putImageData(imageData, 0 ,0);
-            stage.destroy();
             
-          });
+            }); 
+
           
        
     }

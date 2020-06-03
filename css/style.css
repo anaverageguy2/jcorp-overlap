@@ -1,9 +1,4 @@
-html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+
 /*
 button{
   position: relative;
@@ -11,26 +6,13 @@ button{
 
   .img-select-container{
     position: relative;
-    height: "1080px";
+    height: auto;
   }
 
   .img-select-img{
     position: absolute;
     height: auto;
     width: auto;
-    
-  }
-
-  canvas {
-    
-    display: block;
-  }
-
-
-  .img-select-img canvas{
-    display: block;
-    /*
-    vertical-align: middle;*/
   }
   h1{
     display: static;

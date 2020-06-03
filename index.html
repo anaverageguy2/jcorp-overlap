@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Selected IOS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://unpkg.com/jcrop/dist/jcrop.css">
         <script src="https://unpkg.com/jcrop"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -11,22 +12,32 @@
     </head>
 
     <body style="background-color:rgb(255, 128, 128);">
-
-        <div class="img-select-container">
-            <div class="img-select-img">
-                <img id="target" src="images/bike.png" >
-  
-            </div> 
-            <div class="img-select-img img-behind" >
-                <canvas id="canvas2" width="1920px" height="1080px" ></canvas>
-            </div>
-
-            <div class="img-select-img">
-                <img id="target1" src="images/invisible.png" >
-  
-            </div>
+        <div>
+            <img src="images/flower.png"   style="position: relative; max-width: 100%;">
+            <h1>TExt here</h1>
         </div>
-        <h1> This is visible</h1>
+        <div class="select">
+            <!--Make these below 3 images and canvas responsive-->
+            <div class="img-select-container">
+                <div class="img-select-img">
+                    <img src="images/flower.png"  >
+                </div> 
+            
+                <div class="img-select-img" >
+                    <canvas id="canvas2"></canvas>
+                </div>
+            
+                <div class="img-select-img">
+                    <img src="images/invisible.png"  >
+                </div> 
+
+            </div>
+            <img src="images/invisible.png" id="target1">
+        </div>
+            <h1>This is visible</h1>
+        <div>
+            <img src="images/flower.png" style="max-width: 100%;">
+        </div>
 
     </body>
 
